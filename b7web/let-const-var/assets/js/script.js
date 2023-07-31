@@ -199,4 +199,146 @@ if(verificacao) {
  */
 
 
-/* Exercício de funções #4 */
+/* Exercício de funções #4 
+function calcPct(n1, n2) {
+  var pct = (n2 / n1) * 100;
+  return pct
+}
+
+var x = 80;
+var y = 10;
+
+var pct = calcPct(x, y);
+
+console.log(`${pct}% de ${x} é ${y}`)
+*/
+
+
+
+/* Exercício de funções #5 
+
+
+
+function calcularImovel(metragem, quartos) {
+    var m2 = 3000;
+    var preco = 0
+
+    switch(quartos) {
+        case 1:
+        default:
+            preco = metragem * m2;
+            break;
+        case 2:
+            preco = metragem * (m2 *1.2);
+            break;
+        case 3:
+            preco = metragem * (m2 * 1.5);
+            break;
+    }
+    return preco
+    
+}
+
+var metragem = 58;
+var quartos = 2;
+var preco = calcularImovel(metragem, quartos);
+console.log(`A casa custa R$ ${preco}`);
+
+
+
+function calcValorImovel(metros, qtdeQuartos) {
+    if (qtdeQuartos === 1) {
+      return metros * 3000
+    } else if (qtdeQuartos === 2) {
+      return (metros * 3000) * 1.2
+    } else if (qtdeQuartos === 3) {
+      return (metros * 3000) * 1.5
+    }
+  }
+  
+  let metragem = 58
+  let quartos = 2
+  console.log(`O imóvel irá custar: R$ ${calcValorImovel(metragem, quartos)}`)
+
+*/
+
+
+/* Exercício de funções #6 
+
+function validar(usuario, senha) {
+    if(usuario === 'pedro'&& senha === 123){
+        return true
+    } else{
+        return false
+    }
+}
+
+var usuario = 'pedro'
+var senha = 123
+
+var validacao = validar(usuario, senha);
+if(validacao) {
+    console.log('acesso autorizado')
+} else {
+    console.log('acesso negado')
+}
+*/
+
+
+
+/* Arrow Function 
+
+function somar(x, y){
+    return x + y;
+}
+console.log(somar(10,5))
+
+
+const somar = (x, y) => {
+    return x+ y
+}
+console.log(somar(10,10))
+
+
+const somar = (x, y) => x+ y
+
+console.log(somar(10,15))
+
+
+
+function sobrenome(sob) {
+    return 'fernando ' + sob;
+}
+
+console.log(sobrenome('romero'))
+
+
+
+const sobrenome = sob => 'fernando ' + sob
+
+console.log(sobrenome('romero'))
+
+*/
+
+
+/* Variáveis dentro de funções
+
+
+var caunt = 0;
+
+function add() {
+    var caunt = 0;
+    caunt++;
+}
+
+add();
+add();
+
+console.log(caunt);
+
+ */
+
+
+
+/* Funções dentro de funções */
+
