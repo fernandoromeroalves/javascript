@@ -340,5 +340,41 @@ console.log(caunt);
 
 
 
-/* Funções dentro de funções */
+/* Funções dentro de funções 
 
+
+
+function addSquare(a, b){
+   // function square(x) {
+   //     return x * x;
+   // } ou 
+    const square =(x) => { return x * x;}
+
+   let sqrA = square(a)
+   let sqrB = square(b)
+return sqrA + sqrB}
+
+console.log(addSquare(2,3))
+
+*/
+
+/* Introdução a Array 
+
+let colors = ['blue', 'red', 'green'];
+
+console.log(colors);
+
+console.log(colors[0]);
+console.log(colors[1]);
+console.log(colors[2]);
+
+let lista = [
+    'bege',
+    ['xx', 'yy']
+];
+
+console.log(lista[1]);
+
+console.log(lista[1][0])
+
+*/
