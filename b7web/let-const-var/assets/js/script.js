@@ -378,3 +378,134 @@ console.log(lista[1]);
 console.log(lista[1][0])
 
 */
+
+
+/* Operações básicas de array 
+
+
+let ingredientes = [
+    'agua',
+    'farinha',
+    'ovo',
+    'corante',
+    'sal'
+];
+ingredientes.shift();
+
+console.log(ingredientes);
+
+console.log(`total de ingredientes: ${ingredientes.length}`);
+
+*/
+
+
+
+
+/* Exercício de array #7 
+
+let carros = ['BMW', 'Ferrari', 'Mercedes'];
+
+let x = 1
+
+console.log('1. '+ carros[x])
+carros[1] = 'Audi'
+console.log('2. lista com Audi: '+carros)
+
+
+carros.push('Volvo')
+console.log('3. lista com Volvo: '+ carros);
+
+
+console.log('4. itens no array:' + carros.length)
+
+*/
+
+
+
+/* O que são objetos? 
+
+
+let personagem = {
+    nome: 'fernando',
+    idade: 90,
+    pais: 'Brasil',
+    olhos:['preto', 'azul'],
+    caracteristicas:{
+        forca: 20,
+        magia: 5,
+        stamina: 15
+    }
+}
+
+console.log(personagem)
+console.log(`${personagem.nome} tem ${personagem.idade} anos`)
+
+console.log(personagem.caracteristicas.forca)
+console.log(personagem.olhos[1])
+
+
+
+
+
+/* Acessando e alterando objetos 
+
+let personagem = {
+    nome: 'fernando',
+    idade: 90,
+    pais: 'Brasil',
+    olhos:['preto', 'azul'],
+    caracteristicas:{
+        forca: 20,
+        magia: 5,
+        stamina: 15
+    }
+}
+
+personagem.nome = 'Romero'
+
+console.log(personagem.nome);
+
+personagem.caracteristicas.forca += 5;
+
+console.log(personagem.caracteristicas.forca);
+
+personagem.olhos.push('Verde');
+
+console.log(personagem.olhos);
+
+
+*/
+/*
+let personagem = {
+    nome: 'fernando',
+    idade: 37,
+    carros: [
+        {modelo: 'fiat', cor: 'preto'},
+        {modelo: 'ferrari', cor: 'vermelho'}
+    ]
+}
+
+console.log(`O ${personagem.nome} tem ${personagem.idade} anos e dirigi uma ${personagem.carros[1].modelo} de cor ${personagem.carros[0].cor}`);
+
+
+*/
+
+
+/* Função dentro de objeto 
+
+let pessoa = {
+    nome: 'fernando',
+    sobrenome: 'romero',
+    idade: 37,
+    nomeCompleto: function(){
+        return `${this.nome} ${this.sobrenome}`
+    }
+}
+
+console.log(pessoa.nomeCompleto());
+*/
+
+
+/* O loop for */
+
+
