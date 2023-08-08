@@ -506,9 +506,36 @@ console.log(pessoa.nomeCompleto());
 */
 
 
-/* O loop for */
+/* O loop for 
 
 
 for(let n = 0; n < 15; n++){
     console.log('frase qualquer  '+n)
 }
+
+*/
+
+
+/*Dando loop em arrays
+
+
+let cores = [
+    {nome: 'preto',qtd:10},
+    {nome: 'azul',qtd: 5},
+    {nome: 'vermelho',qtd:15}
+];
+
+
+for(let n = 0; n < cores.length; n++){
+    console.log(cores[n].qtd)
+}
+
+for( let i in cores) {
+    console.log(cores[i].nome = cores[i].nome.toUpperCase() )
+}
+
+for(let cor of cores) {
+    console.log(` Nome: ${cor.nome} - ${cor.qtd}`)
+}
+
+*/
