@@ -509,3 +509,6 @@ console.log(pessoa.nomeCompleto());
 /* O loop for */
 
 
+for(let n = 0; n < 15; n++){
+    console.log('frase qualquer  '+n)
+}
