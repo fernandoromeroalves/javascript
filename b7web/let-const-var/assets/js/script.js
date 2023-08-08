@@ -539,3 +539,107 @@ for(let cor of cores) {
 }
 
 */
+
+/* O loop while 
+
+let numero = 0;
+
+while(numero < 10) {
+    console.log(`o numero da vez é ${numero}`);
+    numero++;
+}
+
+for(let numero = 0;numero <=10; numero++){
+    console.log(`o numero desta vez é ${numero}`);
+}
+
+*/
+
+
+/* Exercício de loops #8
+let frutas = ['maça','uva','banana'];
+
+for(let x in frutas){
+    console.log(frutas[x])
+}
+let num = 1
+
+while(num <=100){
+    console.log(`esse é o numero ${num}`);
+    num++;
+}
+
+ */
+
+
+/*Funções de array 
+
+
+let frutas = ['maça','uva','laranja','banana'];
+
+console.log(frutas.join(' & '));
+
+frutas[1] = 'pera'
+
+
+console.log(frutas.join(' & '));
+
+frutas[frutas.length-1] = 'melão'
+console.log(frutas.join(' & '));
+
+*/
+
+
+/* Ordenação de array 
+
+let frutas = ['maça','uva','laranja','banana'];
+
+frutas.sort(); //colocar em ordem alfabeticae
+frutas.reverse();
+console.log(frutas) 
+
+let cars = [
+    {brand: 'fiat', year: 2022},
+    {brand: 'bmw', year: 2018},
+    {brand: 'ferrari', year: 2020}
+]
+cars.sort((a,b)=> a.year - b.year);
+console.log(cars);
+
+*/
+
+
+/* Iteração de array 1 
+
+let frutas = ['maça','uva','laranja','banana'];
+
+let bigFrutas = frutas.filter((item) => {
+   return item.length > 4
+})
+
+console.log(bigFrutas) 
+
+let frutas = ['maça','uva','laranja','banana'];
+
+let ok = frutas.every((value) => {
+    return value.length > 3;
+})
+
+if(ok) {
+    console.log ('todos maiores que tres')
+} else {
+    console.log('todos não são maiores que tres')
+}
+  
+
+let frutas = ['maça','uva','laranja','banana'];
+
+if(frutas.includes('uva')) {
+    console.log('tem uva sim')
+} else {
+    console.log('nada de uva')
+}
+
+*/
+
+/* O que é DOM?
