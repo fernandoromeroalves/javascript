@@ -1,3 +1,3 @@
 # javascript
  
- <a href="https://fernandoromeroalves.github.io/javascript/exercicios\ex023">Anaçisador de Números</a>
+ <a href="https://fernandoromeroalves.github.io/javascript/exercicios\ex023">Analisador de Números</a>
