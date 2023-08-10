@@ -709,22 +709,81 @@ function clicou() {
     }
 }
 
-*/
-
-
-
 function clicou() {
    const li = document.querySelector('li')
 
    
-   if (li.getAttribute.backgroundColor = 'red') {
+   if (li.style.backgroundColor === 'red') {
     li.style.backgroundColor = 'blue';
     li.style.fontSize = '25px';
    } else {
     li.style.backgroundColor = 'red';
-    li.style.fontSize = '15px';
+    li.style.fontSize = '30px';
    }
    
+}
+
+
+function clicou() {
+   const button = document.querySelector('button');
+
+    button.classList.add('verde');
+   if(button.classList.contains('azul')) {
+    button.classList.add('verde')
+    button.classList.remove('azul')   
+} else {
+    button.classList.add('azul')
+    button.classList.remove('verde')
+}
+}
+
+
+function clicou() {
+   const button = document.querySelector('button');
+
+   if(button.classList.contains('azul')){
+   button.classList.replace('azul', 'verde')
+   } else {
+    button.classList.replace('verde', 'azul')
+   }
+}
+
+
+
+
+
+
+function soltou(e){
+    console.log('tecla apertada: '+ e.code)
+    console.log('SHIFT ?' + e.shiftKey);
+    console.log('CTRL?' + e.ctrlKey);
+    console.log('--')
+}
+
+const input = document.querySelector('input')
+input.addEventListener('keyup', soltou)
+*/
+
+
+
+
+/*Exercício: Lista de Tarefas Simples */
+
+// elementos
+const input = document.querySelector('input');
+const lista = document.querySelector('ul');
+//funções
+input.addEventListener('keyup', handleKeyUp);
+//eventos
+function handleKeyUp(e) { 
+    if(e.key === 'Enter' ) {
+        //acionar elemento li na lista
+       const newLi = document.createElement('li');
+       newLi.innerHTML = input.value;
+       lista.appendChild(newLi);
+        // limpar a campo texto
+       input.value = ' ';
+    }
 }
 
 
