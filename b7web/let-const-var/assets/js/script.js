@@ -642,12 +642,89 @@ if(frutas.includes('uva')) {
 
 */
 
-/* O que é DOM?  */
-
-
-function clicou() {
-    console.log("clicou no botão")
-}
+/* O que é DOM? Manipulando elementos 1 Manipulando atributos 
 
 let botao = document.querySelector('.botao');
 botao.addEventListener("click",() => {clicou()} )
+//forma de acionar evento gatilho pelo java direto
+
+
+function clicou() {
+    const teste = document.querySelector('#teste');
+    const ul = teste.querySelector('ul');
+    ul.innerHTML = ul.innerHTML + "<li>item alterado pelo JavaScript</i>"
+    ul.children[0].innerHTML = "Item <strong>alterado</strong>"
+}
+function clicou() {
+    const teste = document.querySelector('#teste');
+    const ul = teste.querySelector('ul');
+
+    
+
+    let newLi = document.createElement("li");
+    newLi.innerText = "item adicionado";
+    ul.prepend(newLi)
+}
+
+function clicou() {
+    const teste = document.querySelector('#teste');
+    const ul = teste.querySelector('ul');
+
+    let newUl = document.createElement('ul');
+    ul.after(newUl);
+
+    for(let i = 0;i < 5;i++){
+        let newLi = document.createElement('li');
+        newLi.innerHTML = "item add" + i;
+        newUl.append(newLi);
+
+    }
+    
+
+    
+}
+
+function clicou() {
+    const input = document.querySelector('input')
+    if(input.hasAttribute('placeholder')) {
+        console.log('tem placeholde sim')
+    } else {
+        console.log('não tem nadinha de placeholder')
+    }
+}
+
+
+
+function clicou() {
+    const input = document.querySelector('input')
+    const botao = document.querySelector('.botao')
+    
+    if(input.getAttribute('type') === 'text') {
+        input.setAttribute('type', 'password');
+        botao.innerText = "mostrar senha";
+    }else {
+        input.setAttribute('type', 'text');
+        botao.setAttribute('value', 'ocultar senha')
+        botao.innerText = "ocultar senha";
+    }
+}
+
+*/
+
+
+
+function clicou() {
+   const li = document.querySelector('li')
+
+   
+   if (li.getAttribute.backgroundColor = 'red') {
+    li.style.backgroundColor = 'blue';
+    li.style.fontSize = '25px';
+   } else {
+    li.style.backgroundColor = 'red';
+    li.style.fontSize = '15px';
+   }
+   
+}
+
+
