@@ -767,7 +767,7 @@ input.addEventListener('keyup', soltou)
 
 
 
-/*Exercício: Lista de Tarefas Simples */
+/*Exercício: Lista de Tarefas Simples 
 
 // elementos
 const input = document.querySelector('input');
@@ -786,4 +786,5 @@ function handleKeyUp(e) {
     }
 }
 
+*/
 
