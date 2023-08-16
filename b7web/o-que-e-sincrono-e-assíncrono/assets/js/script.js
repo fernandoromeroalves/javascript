@@ -16,3 +16,9 @@ cabeçalhos - headers
 corpo - body retorna com dados
 */
 
+/*como uma funciona uma API?
+API = aplicationprogramming interface
+
+JSON = javaScript Object Notation
+
+*/
