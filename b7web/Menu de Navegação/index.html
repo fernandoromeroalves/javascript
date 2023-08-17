@@ -20,7 +20,7 @@
         margin-right:10px;
     }
     #menu-area {
-        width:200px;
+        width:0px;
         height:100vh;
         background:#ccc;
         overflow-x:hidden;
@@ -40,13 +40,17 @@
     #menu-area li:hover {
         background:#DDD;
     }
+
+    .menu-opened{
+        width: 200px !important;
+    }
     </style>
     </head>
 <body>
 <h1 id="titulo">Seja bem vindo(a)</h1>
 <aside>
-    <div id="menu-opener">
-        <img src="menu.png" width="36">
+    <div onclick="menuToggle()" id="menu-opener">
+        <img src="assets/imagem/pngegg.png" width="36">
     </div>
     <div id="menu-area">
         <ul>
@@ -56,8 +60,6 @@
         </ul>
     </div>
 </aside>
-<script>
-
-</script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
