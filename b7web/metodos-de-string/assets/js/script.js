@@ -1,7 +1,6 @@
 let nome = 'fernando romero alves';
 
-let resultado = nome.substr
-
+let resultado = nome.split('o');
 
   
 
