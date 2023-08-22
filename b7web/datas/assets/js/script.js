@@ -1,3 +1,7 @@
-let d = new Date(2023, 7, 22);
+let d = new Date();
 
-console.log(d.toString())
+d.setDate(d.getDate()+80)
+
+let novoValor = d;
+
+console.log(novoValor);
