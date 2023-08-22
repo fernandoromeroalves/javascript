@@ -1,4 +1,4 @@
-let timer;
+/*let timer;
 
 function comecar(){
    timer = setInterval(showTime, 999) 
@@ -18,4 +18,14 @@ function showTime(){
     document.querySelector('.demo').innerHTML = txt 
 
 }
+*/
+let timer
+function rodar() {
+    timer = setTimeout(function () {
+    document.querySelector('.demo').innerHTML = 'rodou!!!!!!!!!!!!!'
+}, 2000)
+}
 
+function parar(){
+    clearTimeout(timer)
+}
