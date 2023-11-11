@@ -9,3 +9,9 @@ console.log(Number('44646'));
 console.log(parseFloat('5465131'));
 console.log(parseInt('1316.464'));
 console.log(Boolean(1))
+
+console.clear
+
+console.log('10' +1);
+console.log('10'-1);
+console.log(10 * '3');
