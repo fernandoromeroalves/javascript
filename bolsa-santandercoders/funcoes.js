@@ -15,3 +15,12 @@ const somarArray = ()=>{
 resultado = somarArray()
 
 console.log(resultado)
+
+pessoa = {
+    nome: 'fernando',
+    idade: 37
+}
+
+for (let chave in pessoa){
+    console.log(chave)
+}
